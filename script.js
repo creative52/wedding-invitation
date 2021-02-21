@@ -104,24 +104,24 @@ window.onload = function () {
    * 이미지
    */
   const imagesEl = document.querySelector(".images");
-  // for (let i = 0; i < 14; i++) {
-  //   const imageWrapperEl = document.createElement("div");
-  //   imageWrapperEl.className = "image-wrapper";
-  //   const imageEl = document.createElement("img");
-  //   const src = `./assets/img/photo/${i}.jpg`;
-  //   imageEl.src = src;
-  //   imageEl.onclick = openImageModal;
-  //   imageWrapperEl.appendChild(imageEl);
-  //   imagesEl.appendChild(imageWrapperEl);
-  //   imageEl.onload = function () {
-  //     const width = this.width;
-  //     const height = this.height;
-  //     if (width > height
-  //       || i === 0 || i === 1) {
-  //       this.parentElement.classList.add('width');
-  //     }
-  //   };
-  // }
+  for (let i = 0; i < 14; i++) {
+    const imageWrapperEl = document.createElement("div");
+    imageWrapperEl.className = "image-wrapper";
+    const imageEl = document.createElement("img");
+    const src = `./assets/img/photo/${i}.jpg`;
+    imageEl.src = src;
+    imageEl.onclick = openImageModal;
+    imageWrapperEl.appendChild(imageEl);
+    imagesEl.appendChild(imageWrapperEl);
+    imageEl.onload = function () {
+      const width = this.width;
+      const height = this.height;
+      if (width > height
+        || i === 0 || i === 1) {
+        this.parentElement.classList.add('width');
+      }
+    };
+  }
 
   /**
    * 이미지 모달
