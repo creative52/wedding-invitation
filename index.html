@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--meta-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta property="og:title" content="청첩장: 이명호 & 박나실" />
+  <meta property="og:description" content="Save the date" />
+  <meta property="og:image" content="./assets/img/photo/16.jpg" />
+
+  <!--favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+  <!-- <title>청첩장</title> -->
+
+  <!-- script -->
+  <script src="https://img.bojagicard.com/jquery/jquery-1.7.1.min.js"></script>
+  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Noto+Sans+KR" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css" />
+
+  <!--css-->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- 네비게이션 -->
+  <nav>
+    <ul class="menus">
+      <div class="nav-menu" id="nav-main">
+        <span class="char">#Wedding</span>
+        <span class="emoji">🎉</span>
+      </div>
+      <div class="nav-menu" id="nav-profile">
+        <span class="char">#Invitation</span>
+        <span class="emoji">👨🏻‍💻❤️👩🏻‍💻</span>
+      </div>
+      <div class="nav-menu" id="nav-photo">
+        <span class="char">#Photo</span>
+        <span class="emoji">📷</span>
+      </div>
+      <div class="nav-menu" id="nav-location">
+        <span class="char">#Location</span>
+        <span class="emoji">🚗</span>
+      </div>
+    </ul>
+    <div class="progress"></div>
+  </nav>
+
+  <div class="content">
+    <!-- 메인 -->
+    <div class="pane main">
+      <span class="anchor" id="main"></span>
+      <!-- 꽃, 이름 -->
+      <div class="flower">
+        <div class="names">
+          <span class="name">이명호</span>
+          <span class="em">&</span>
+          <span class="name">박나실</span>
+        </div>
+      </div>
+
+      <!-- 시간, 웨딩홀 -->
+      <div class="schedule">
+        <span class="date">2021년 03월 20일, 토요일 오후 1시</span>
+        <span class="address">거제교회</span>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 프로필 -->
+    <div class="pane profile">
+      <span class="anchor" id="profile"></span>
+
+      <h2>Invitation</h2>
+
+      <div class="invitation">
+
+        서로의 다름을 인정하고 있는 그대로를 사랑하며<br />
+        힘들 때 기도하고 기다려주며<br />
+        걸음을 맞추어 함께 걸어가겠습니다.<br /><br />
+
+        지금까지 베풀어주신 사랑과 은혜를 보답하며<br />
+        행복하게 살겠습니다.<br />
+        따뜻한 사랑과 믿음으로 축복해주세요!<br />
+      </div>
+
+      <!-- 프로필 사진 -->
+      <div class="pictures">
+        <div class="seunghyeon">
+          <img src="./assets/img/photo/14.jpg" alt="" />
+        </div>
+        <div class="ring">
+          <img src="./assets/img/wedding-ring.png" alt="" />
+        </div>
+        <div class="ara">
+          <img src="./assets/img/photo/14.jpg" alt="" />
+        </div>
+      </div>
+
+      <!-- 소개 -->
+      <div class="introduction">
+        <div class="relationship">
+          <div class="parents">
+            <span class="father">이도성</span>
+            <span class="mother">최순애</span>
+          </div>
+          <span class="josa">의 장남</span>
+          <span class="child">명호</span>
+        </div>
+
+        <div class="relationship">
+          <div class="parents">
+            <span class="father">박광웅</span>
+            <span class="mother">변명희</span>
+          </div>
+          <span class="josa">&nbsp;의 장녀</span>
+          <span class="child">나실</span>
+        </div>
+      </div>
+
+      <!-- 연락 -->
+      <div class="contacts">
+        <div class="contact">
+          <span class="contact-husband">신랑측에 연락하기</span>
+          <!-- <a class="tel" href="tel:01065563747"></a> -->
+        </div>
+
+        <div class="contact">
+          <span class="contact-wife">신부측에 연락하기</span>
+          <!-- <a class="tel" href="tel:01021117556"></a> -->
+        </div>
+
+        <div class="modal husband">
+          <div class="dim"></div>
+          <span class="close">&times;</span>
+          <div class="content">
+            <p class="title">신랑측 연락처</p>
+            <div class="each">
+              <span>신랑</span>
+              <span><a href="tel:01066691943">전화하기<img src="./assets/img/phone.png"></a></span>
+              <span><a href="sms:01066691943">문자하기<img src="./assets//img/sms.png"></a></span>
+            </div>
+            <div class="each">
+              <span>부)이도성</span>
+              <span><a href="tel:01076616262">전화하기<img src="./assets/img/phone.png"></a></span>
+              <span><a href="sms:01076616262">문자하기<img src="./assets//img/sms.png"></a></span>
+            </div>
+            <div class="each">
+              <span>모)최순애</span>
+              <span><a href="tel:01092151943">전화하기<img src="./assets/img/phone.png"></a></span>
+              <span><a href="sms:01092151943">문자하기<img src="./assets//img/sms.png"></a></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal wife">
+          <div class="dim"></div>
+          <span class="close">&times;</span>
+          <div class="content">
+            <p class="title">신부측 연락처</p>
+            <div class="each">
+              <span>신부</span>
+              <span><a href="tel:01090316638">전화하기<img src="./assets/img/phone.png"></a></span>
+              <span><a href="sms:01090316638">문자하기<img src="./assets//img/sms.png"></a></span>
+            </div>
+            <div class="each">
+              <span>부)박광웅</span>
+              <span><a href="tel:01066626638">전화하기<img src="./assets/img/phone.png"></a></span>
+              <span><a href="sms:01066626638">문자하기<img src="./assets//img/sms.png"></a></span>
+            </div>
+            <div class="each">
+              <span>모)변명희</span>
+              <span><a href="tel:01066656638">전화하기<img src="./assets/img/phone.png"></a></span>
+              <span><a href="sms:01066656638">문자하기<img src="./assets//img/sms.png"></a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 사진첩 -->
+    <div class="pane photo">
+      <span class="anchor" id="photo"></span>
+
+      <h2>Photo</h2>
+
+      <!-- 갤러리 -->
+      <div class="image-slider">
+        <div class="images"></div>
+      </div>
+      <!-- 모달 -->
+      <div class="modal">
+        <div class="dim"></div>
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image" />
+      </div>
+    </div>
+
+    <!-- 지도 -->
+    <div class="pane location">
+      <span class="anchor" id="location"></span>
+
+      <h2>Location</h2>
+
+      <div id="map">
+        <img src="./assets/img/map/map.gif">
+      </div>
+
+      <div class="redirect-map">
+        <!-- <div class="header">앱에서 열기</div> -->
+        <div class="link">
+          <a target="_blank"
+            href="https://apis.openapi.sk.com/tmap/app/routes?appKey=l7xx20401a447f994002b83f0e74e5482a2d&name=%EA%B1%B0%EC%A0%9C%EA%B5%90%ED%9A%8C&lon=129.070347000116&lat=35.1866090595006">
+            <img src="./assets/img/map/map_navi_button-tmap.png" alt="" />
+          </a>
+          <a target="_blank"
+            href="http://m.atlan.co.kr/searchPlus/linkAtlan.do?shareType=kakao&coordX=129.070347000116&coordY=35.1866090595006&title=%EA%B1%B0%EC%A0%9C%EA%B5%90%ED%9A%8C&AuthKey=2b1ffc4c97acca5a359282739535a280576c02aa0cc4c89b86afca8e20bdc7e8">
+            <img src="./assets/img/map/map_navi_button-atlan.png" alt="" />
+          </a>
+          <a href="javascript://"
+            onclick="windowcopen('//map.naver.com/?menu=location&pinType=place&lat=35.1866090595006&lng=129.070347000116&title=%EA%B1%B0%EC%A0%9C%EA%B5%90%ED%9A%8C','','width=1156,height=720')">
+            <img src="./assets/img/map/map_navi_button-naver.png" alt="" />
+          </a>
+          <a onclick="kakao_navi();$('.insbox').hide();">
+            <img src="./assets/img/map/map_navi_button-kakao.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="pane footer">
+      <!-- © 2019 SeungHyeon Oh & Ara Jo -->
+    </div>
+  </div>
+  <!--script-->
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=41edd6c6cb3fd24f57ad354551d1064d"></script>
+  <script src="smoothScroll.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

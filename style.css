@@ -1,0 +1,626 @@
+@font-face {
+  font-family: "777Balsamtint";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Balsamtint.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FlowerRoad";
+  src: url("./assets/font/SangSangFlowerRoad.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "NanumSquare", sans-serif;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  background-color: #fff;
+}
+
+nav .menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 13vw;
+  font-size: 4vw;
+}
+
+nav .menus .emoji {
+  display: none;
+}
+
+nav .menus .on .char {
+  display: none;
+}
+
+nav .menus .on .emoji {
+  display: block;
+}
+
+nav .progress {
+  background: #7490c7;
+  display: block;
+  width: 100%;
+  height: 0.5vw;
+}
+
+.content .pane {
+  position: relative;
+  padding: 5vw 10px;
+}
+
+.content .pane:not(:first-child) {
+  padding: 7vw 10px;
+}
+
+.content .pane .anchor {
+  position: absolute;
+  margin-top: -20vw;
+  padding-top: 20vw;
+}
+
+.content .pane.footer {
+  margin-top: 10px;
+  padding: 3vw 0;
+}
+
+.content .pane h2 {
+  margin: 0;
+  font-size: 7vw;
+  font-family: FlowerRoad;
+  text-align: center;
+  margin-bottom: 3vw;
+  margin-top: 5vw;
+}
+
+.content .divider {
+  width: 50%;
+  height: 10vw;
+  margin: 0 auto;
+  background-image: url("./assets/img/divider.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .flower {
+  height: calc(107vw - 20px);
+  background: no-repeat url("./assets/img/frame.png");
+  background-size: contain;
+  background-origin: border-box;
+  padding: 24.13vw 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  font-family: FlowerRoad;
+}
+
+.main .flower .names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.main .flower .names .name {
+  font-size: 13vw;
+}
+
+.main .flower .names .name:last-child {
+  font-size: 10vw;
+}
+
+.main .flower .names .em {
+  font-size: 9vw;
+}
+
+.main .schedule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "777Balsamtint";
+  font-size: 6vw;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile .invitation {
+  text-align: center;
+  font-family: "777Balsamtint";
+  font-size: 5vw;
+  margin: 7vw 0 11vw;
+}
+
+.profile .pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -3vw;
+  margin-bottom: 5vw;
+}
+
+.profile .pictures div {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  overflow: hidden;
+  height: calc(43vw - 6.6px);
+}
+
+.profile .pictures div img {
+  width: 100%;
+}
+
+.profile .pictures div.ring {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile .pictures div.ring img {
+  width: 100%;
+}
+
+.profile .pictures div.seunghyeon img {
+  -webkit-transform: scale(6) translateX(4.8vw) translateY(0vw);
+          transform: scale(6) translateX(4.8vw) translateY(0vw);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-clip-path: circle(8% at 38% 55%);
+          clip-path: circle(8% at 38% 55%);
+}
+
+.profile .pictures div.ara img {
+  -webkit-transform: scale(6) translateX(-6vw) translateY(-0.76vw);
+          transform: scale(6) translateX(-6vw) translateY(-0.76vw);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-clip-path: circle(8% at 65% 58%);
+          clip-path: circle(8% at 65% 58%);
+}
+
+.profile .introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 6vw;
+  font-family: "777Balsamtint";
+}
+
+.profile .introduction .relationship {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile .introduction .relationship .parents {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile .introduction .relationship .josa {
+  margin: 0 1.5vw;
+  font-size: 4.5vw;
+}
+
+.profile .contacts {
+  margin-top: 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 5.5vw;
+  font-family: "777Balsamtint";
+}
+
+.profile .contacts .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 39vw;
+  height: 8vw;
+}
+
+.profile .contacts .contact .tel {
+  display: inline-block;
+  width: 6vw;
+  height: 6vw;
+  background-image: url(./assets/img/phone.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.profile .contacts .modal.husband {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  top: 20%;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+  -webkit-animation: fadein 0.3s;
+          animation: fadein 0.3s;
+}
+
+.profile .contacts .modal.husband .close {
+  position: absolute;
+  top: 0vw;
+  right: 5vw;
+  color: black;
+  font-size: 8vw;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.profile .contacts .modal.husband .dim {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.profile .contacts .modal.husband .content {
+  padding: 5vw;
+  width: 100%;
+  background-color: white;
+}
+
+.profile .contacts .modal.husband .content .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-left: 5vw;
+}
+
+.profile .contacts .modal.husband .content .each {
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  padding: 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 3vw;
+}
+
+.profile .contacts .modal.husband .content .each span a {
+  text-decoration: none;
+  color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile .contacts .modal.husband .content .each span:first-child {
+  width: 20vw;
+  border-right: 1px solid #ececec;
+}
+
+.profile .contacts .modal.husband .content .each img {
+  width: 7vw;
+  margin-left: 2vw;
+  text-align: center;
+}
+
+.profile .contacts .modal.wife {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  top: 20%;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+  -webkit-animation: fadein 0.3s;
+          animation: fadein 0.3s;
+}
+
+.profile .contacts .modal.wife .close {
+  position: absolute;
+  top: 0vw;
+  right: 5vw;
+  color: black;
+  font-size: 8vw;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.profile .contacts .modal.wife .dim {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.profile .contacts .modal.wife .content {
+  padding: 5vw;
+  width: 100%;
+  background-color: white;
+}
+
+.profile .contacts .modal.wife .content .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-left: 5vw;
+}
+
+.profile .contacts .modal.wife .content .each {
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  padding: 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 3vw;
+}
+
+.profile .contacts .modal.wife .content .each span a {
+  text-decoration: none;
+  color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile .contacts .modal.wife .content .each span:first-child {
+  width: 20vw;
+  border-right: 1px solid #ececec;
+}
+
+.profile .contacts .modal.wife .content .each img {
+  width: 7vw;
+  margin-left: 2vw;
+  text-align: center;
+}
+
+.photo .images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto-fit;
+      grid-template-columns: auto-fit;
+  grid-gap: 0;
+  grid-column-gap: 1vw;
+  overflow: hidden;
+}
+
+.photo .images .image-wrapper.width {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}
+
+.photo .images .image-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.photo .modal {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
+}
+
+.photo .modal .close {
+  position: absolute;
+  top: 5vw;
+  right: 5vw;
+  color: white;
+  font-size: 8vw;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.photo .modal .modal-content {
+  width: 100%;
+}
+
+.photo .modal .dim {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 4vw;
+}
+
+.location #map img {
+  width: 100%;
+  height: 100%;
+}
+
+.location .redirect-map .header {
+  font-size: 5vw;
+  margin: 5vw 0 2vw;
+}
+
+.location .redirect-map .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.location .redirect-map .link a {
+  font-size: 4vw;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.location .redirect-map .link a img {
+  width: 50%;
+}
+
+.location .location-desc .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5vw 0 1vw;
+  font-size: 5vw;
+}
+
+.location .location-desc .header .icon {
+  margin-right: 2vw;
+  width: 5vw;
+  height: auto;
+}
+
+.location .location-desc .desc {
+  font-size: 3.5vw;
+}
+
+.location .location-desc .bus {
+  font-size: 3vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1vw;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
