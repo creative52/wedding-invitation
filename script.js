@@ -104,24 +104,24 @@ window.onload = function () {
    * 이미지
    */
   const imagesEl = document.querySelector(".images");
-  for (let i = 0; i < 14; i++) {
-    const imageWrapperEl = document.createElement("div");
-    imageWrapperEl.className = "image-wrapper";
-    const imageEl = document.createElement("img");
-    const src = `./assets/img/photo/${i}.jpg`;
-    imageEl.src = src;
-    imageEl.onclick = openImageModal;
-    imageWrapperEl.appendChild(imageEl);
-    imagesEl.appendChild(imageWrapperEl);
-    imageEl.onload = function () {
-      const width = this.width;
-      const height = this.height;
-      if (width > height
-        || i === 0 || i === 1) {
-        this.parentElement.classList.add('width');
-      }
-    };
-  }
+  // for (let i = 0; i < 14; i++) {
+  //   const imageWrapperEl = document.createElement("div");
+  //   imageWrapperEl.className = "image-wrapper";
+  //   const imageEl = document.createElement("img");
+  //   const src = `./assets/img/photo/${i}.jpg`;
+  //   imageEl.src = src;
+  //   imageEl.onclick = openImageModal;
+  //   imageWrapperEl.appendChild(imageEl);
+  //   imagesEl.appendChild(imageWrapperEl);
+  //   imageEl.onload = function () {
+  //     const width = this.width;
+  //     const height = this.height;
+  //     if (width > height
+  //       || i === 0 || i === 1) {
+  //       this.parentElement.classList.add('width');
+  //     }
+  //   };
+  // }
 
   /**
    * 이미지 모달
@@ -163,6 +163,89 @@ window.onload = function () {
   //   )
   // }).setMap(map);
 
+  /**
+   * 축의금
+   */
+  const husAccModal = document.querySelector('.husband-account-modal');
+  document.querySelector('.hus-account-modal-btn').addEventListener('click', openHusAccModal);
+  function openHusAccModal(e) {
+    husAccModal.style.display = 'flex';
+    document.body.style.overflow = "hidden";
+  }
+  function closeHusAccModal() {
+    husAccModal.style.display = "none";
+    document.body.style.overflow = "";
+  }
+  const husAccModalClose = document.querySelector('.husband-account-modal .close');
+  husAccModalClose.addEventListener('click', closeHusAccModal);
+
+  const wifeAccModal = document.querySelector('.wife-account-modal');
+  document.querySelector('.wife-account-modal-btn').addEventListener('click', openWifeAccModal);
+  function openWifeAccModal(e) {
+    wifeAccModal.style.display = 'flex';
+    document.body.style.overflow = "hidden";
+  }
+  function closeWifeAccModal() {
+    wifeAccModal.style.display = "none";
+    document.body.style.overflow = "";
+  }
+  const wifeAccModalClose = document.querySelector('.wife-account-modal .close');
+  wifeAccModalClose.addEventListener('click', closeWifeAccModal);
+
+  document.querySelector('.huscopy').addEventListener('click', copyHusAccToClipboard);
+  function copyHusAccToClipboard() {
+    var t = document.createElement("textarea");
+    document.body.appendChild(t);
+    t.value = '1002643227938';
+    t.select();
+    document.execCommand('copy');
+    document.body.removeChild(t);
+  }
+  document.querySelector('.husfacopy').addEventListener('click', copyHusFaAccToClipboard);
+  function copyHusFaAccToClipboard() {
+    var t = document.createElement("textarea");
+    document.body.appendChild(t);
+    t.value = '179120039523';
+    t.select();
+    document.execCommand('copy');
+    document.body.removeChild(t);
+  }
+  document.querySelector('.wifecopy').addEventListener('click', copyWifeAccToClipboard);
+  function copyWifeAccToClipboard() {
+    var t = document.createElement("textarea");
+    document.body.appendChild(t);
+    t.value = '1002695901225';
+    t.select();
+    document.execCommand('copy');
+    document.body.removeChild(t);
+  }
+  document.querySelector('.wifefacopy').addEventListener('click', copyWifeFaAccToClipboard);
+  function copyWifeFaAccToClipboard() {
+    var t = document.createElement("textarea");
+    document.body.appendChild(t);
+    t.value = '075120601899';
+    t.select();
+    document.execCommand('copy');
+    document.body.removeChild(t);
+  }
+
+  document.querySelectorAll('.copy').forEach(el => el.addEventListener('click', openAlert));
+
+  const accountPaneEl = document.querySelector('.pane.bank-account');
+  function openAlert() {
+    const alertEl = document.createElement('div');
+    alertEl.className = 'copied-modal';
+    alertEl.style.display = 'flex';
+    const spanEl = document.createElement('span');
+    spanEl.className = 'text';
+    spanEl.innerText = '복사되었습니다.';
+    alertEl.appendChild(spanEl);
+    accountPaneEl.appendChild(alertEl);
+    setTimeout(() => {
+      alertEl.style.display = 'none';
+      accountPaneEl.removeChild(alertEl);
+    }, 2000);
+  }
 };
 function windowcopen(url, title, options) {
 

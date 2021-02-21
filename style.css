@@ -91,6 +91,14 @@ nav .progress {
   margin-top: 5vw;
 }
 
+.content .pane h3 {
+  margin: 0;
+  font-size: 4vw;
+  font-family: FlowerRoad;
+  text-align: center;
+  margin-top: -2vw;
+}
+
 .content .divider {
   width: 50%;
   height: 10vw;
@@ -606,6 +614,198 @@ nav .progress {
   margin: 1vw;
 }
 
+.bank-account .account-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2vw;
+}
+
+.bank-account .account-buttons span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3vw;
+  border-radius: 5vw;
+  background-color: #ccc7fd;
+  width: 60vw;
+  margin-top: 3vw;
+}
+
+.bank-account .husband-account-modal {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+  -webkit-animation: fadein 0.3s;
+          animation: fadein 0.3s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bank-account .husband-account-modal .content {
+  padding: 5vw;
+  width: 80vw;
+  border: 1px solid #d1d1d1;
+  background-color: #fdfcfc;
+}
+
+.bank-account .husband-account-modal .content .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  font-size: 4vw;
+  font-weight: bold;
+  padding-bottom: 2vw;
+  border-bottom: 1px solid #b3b3b3;
+  margin-bottom: 3vw;
+  margin-top: 2vw;
+}
+
+.bank-account .husband-account-modal .content .account {
+  margin-top: 4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bank-account .husband-account-modal .content .account button {
+  border: none;
+  padding: 0.1vw 3vw;
+  height: 7vw;
+  border-radius: 2vw;
+  background-color: #f3f3f3;
+}
+
+.bank-account .husband-account-modal .content .close {
+  background-color: #ccc7fd;
+  border-radius: 2vw;
+  border: none;
+  width: 100%;
+  padding: 3vw;
+  color: white;
+  margin-top: 6vw;
+}
+
+.bank-account .wife-account-modal {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+  -webkit-animation: fadein 0.3s;
+          animation: fadein 0.3s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bank-account .wife-account-modal .content {
+  padding: 5vw;
+  width: 80vw;
+  border: 1px solid #d1d1d1;
+  background-color: #fdfcfc;
+}
+
+.bank-account .wife-account-modal .content .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  font-size: 4vw;
+  font-weight: bold;
+  padding-bottom: 2vw;
+  border-bottom: 1px solid #b3b3b3;
+  margin-bottom: 3vw;
+  margin-top: 2vw;
+}
+
+.bank-account .wife-account-modal .content .account {
+  margin-top: 4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bank-account .wife-account-modal .content .account button {
+  border: none;
+  padding: 0.1vw 3vw;
+  height: 7vw;
+  border-radius: 2vw;
+  background-color: #f3f3f3;
+}
+
+.bank-account .wife-account-modal .content .close {
+  background-color: #ccc7fd;
+  border-radius: 2vw;
+  border: none;
+  width: 100%;
+  padding: 3vw;
+  color: white;
+  margin-top: 6vw;
+}
+
+.bank-account .copied-modal {
+  display: none;
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: fadeinout 2s;
+          animation: fadeinout 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  width: 100vw;
+}
+
+.bank-account .copied-modal .text {
+  border-radius: 2vw;
+  background-color: #ccc7fd;
+  padding: 2vw;
+}
+
 @-webkit-keyframes fadein {
   from {
     opacity: 0;
@@ -620,6 +820,24 @@ nav .progress {
     opacity: 0;
   }
   to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeinout {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinout {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
     opacity: 1;
   }
 }
