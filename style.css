@@ -641,7 +641,7 @@ nav .progress {
           justify-content: center;
   padding: 3vw;
   border-radius: 5vw;
-  background-color: #7490c7;
+  background-color: #fccee2;
   width: 60vw;
   margin-top: 3vw;
 }
@@ -706,7 +706,7 @@ nav .progress {
 }
 
 .bank-account .husband-account-modal .content .close {
-  background-color: #7490c7;
+  background-color: #fccee2;
   border-radius: 2vw;
   border: none;
   width: 100%;
@@ -775,7 +775,7 @@ nav .progress {
 }
 
 .bank-account .wife-account-modal .content .close {
-  background-color: #7490c7;
+  background-color: #fccee2;
   border-radius: 2vw;
   border: none;
   width: 100%;
@@ -802,7 +802,7 @@ nav .progress {
 
 .bank-account .copied-modal .text {
   border-radius: 2vw;
-  background-color: #7490c7;
+  background-color: #fccee2;
   padding: 2vw;
 }
 
