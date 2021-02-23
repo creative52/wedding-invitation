@@ -10,6 +10,11 @@
   src: url("./assets/font/SangSangFlowerRoad.otf");
 }
 
+@font-face {
+  font-family: "LoveLetter";
+  src: url("./assets/font/loveletter.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -119,15 +124,16 @@ nav .progress {
 }
 
 .main .flower {
-  height: calc(107vw - 20px);
-  background: no-repeat url("./assets/img/frame.png");
+  /* height: calc(107vw - 20px); */
+  height: 84vw;
+  background: no-repeat url("./assets/img/frame.jpeg");
   background-size: contain;
   background-origin: border-box;
   padding: 24.13vw 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  font-family: FlowerRoad;
+  font-family: LoveLetter;
 }
 
 .main .flower .names {
@@ -148,11 +154,7 @@ nav .progress {
 }
 
 .main .flower .names .name {
-  font-size: 13vw;
-}
-
-.main .flower .names .name:last-child {
-  font-size: 10vw;
+  font-size: 11vw;
 }
 
 .main .flower .names .em {
